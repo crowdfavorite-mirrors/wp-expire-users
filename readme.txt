@@ -61,6 +61,9 @@ None at present.
 
 == Changelog ==
 
+= 0.9cf =
+* Added ability to filter registration expiration on a user.
+
 = 0.9 =
 * Expired dates are displayed as red in admin.
 * Dates are correctly internationalized.

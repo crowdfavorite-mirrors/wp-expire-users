@@ -42,7 +42,7 @@ class Expire_Users {
 	 * Runs on user registration.
 	 */
 	function user_register( $user_id ) {
-		if ( isset( $_POST['expire_users'] ) && 'auto' == $_POST['expire_users'] ) {
+		if ( isset( $_POST['expire_users'] ) && 'auto' == $_POST['expire_users'] && apply_filters( 'expire_users_set_register_expiration', true, $user_id ) ) {
 
 			$expire_settings = $this->admin->settings->get_default_expire_settings();
 
